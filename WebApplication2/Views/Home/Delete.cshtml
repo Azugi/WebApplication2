@@ -1,0 +1,27 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Delete</title>
+</head>
+<body>
+    <h2>@ViewBag.Browsing.Title</h2>
+    <p>@ViewBag.Browsing.Author</p>
+    <div>
+        <h2>Delete?</h2>
+        <form method="post">
+            <input type="hidden" value="@ViewBag.Browsing.Id" name="NewsId" />
+            <p>Введите причину :</p>
+            <input type="text" name="str" />
+            <input type="submit" value="Отправить" />
+        </form>
+</div>
+    <div id="results"></div>
+</body>
+</html>
