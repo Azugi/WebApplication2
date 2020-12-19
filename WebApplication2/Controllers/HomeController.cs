@@ -32,7 +32,6 @@ namespace NewsSite.Controllers
         [HttpPost]
         public PartialViewResult Add(News newsAdd)
         {
-            ViewBag.Message = "news add";
             db.News.Add(newsAdd);
             db.SaveChanges();
             return PartialView("_PartialAlertAdd");

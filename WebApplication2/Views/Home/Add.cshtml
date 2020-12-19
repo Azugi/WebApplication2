@@ -19,9 +19,7 @@
     <div>
         @using (Ajax.BeginForm("Add", "Home", new AjaxOptions { UpdateTargetId = "results",
             InsertionMode = InsertionMode.InsertAfter ,
-            LoadingElementId = "loading",
-            LoadingElementDuration = 1000
-        }, new { @class = "form-horizontal", role = "form" }))
+        }, new { @class = "form-horizontal", role = "form", FormMethod.Post }))
         {
             <hr />
             <div class="form-group">

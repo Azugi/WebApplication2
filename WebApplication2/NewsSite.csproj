@@ -139,6 +139,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Data\NewsDataBase.mdf" />
+    <Content Include="App_Data\NewsDataBase2.mdf" />
+    <Content Include="App_Data\NewsDataBase2_log.ldf">
+      <DependentUpon>NewsDataBase2.mdf</DependentUpon>
+    </Content>
     <Content Include="App_Data\NewsDataBase_log.ldf">
       <DependentUpon>NewsDataBase.mdf</DependentUpon>
     </Content>

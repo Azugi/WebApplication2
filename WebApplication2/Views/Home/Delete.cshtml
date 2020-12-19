@@ -17,9 +17,23 @@
         <h2>Delete?</h2>
         <form method="post">
             <input type="hidden" value="@ViewBag.Browsing.Id" name="NewsId" />
-            <p>Введите причину :</p>
-            <input type="text" name="str" />
-            <input type="submit" value="Отправить" />
+            <div class="row">
+                <div class="col-md-10">
+                    <p>Введите причину :</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-10">
+                    <input type="text" name="str" />
+                </div>
+            </div>
+            <hr />
+            <div class="row">
+                <div class="col-md-10">
+                    <input type="submit" class="btn btn-primary" value="Отправить" />
+                </div>
+            </div>
+
         </form>
 </div>
     <div id="results"></div>
